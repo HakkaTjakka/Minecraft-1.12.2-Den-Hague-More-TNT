@@ -34,10 +34,12 @@ Create self powered command_block:
 Command: /function exxabite:test
 
 (Maybe comment (‘#’) out statements in saves/world/data/exxabite/test.mcfunction first).
+/reload
 
 Put block down, copy to inventory: ctlr + middle mouse button.
 
 (Then uncomment (‘#’) out statements in saves/world/data/exxabite/test.mcfunction).
+/reload
 
 (Block gets active then….) 
 
