@@ -23,3 +23,43 @@ Enschede (diff. scale, Amsterdam, Amsterdam small/large, maze): https://drive.go
 Source code: https://github.com/HakkaTjakka/MinecraftWorldEditor
 
 Do you want to create schematics / region files from 2d / 3d source (voxelizer), i will help you out installing and using, it is a whole process..
+
+
+*********************************************************** FLOODFILL 1.12.2 ********************************************************************
+
+Create self powered command_block:
+
+/give @me minecraft:command_block
+
+Command: /function exxabite:test
+
+(Maybe comment (‘#’) out statements in saves/world/data/exxabite/test.mcfunction first).
+
+Put block down, copy to inventory: ctlr + middle mouse button.
+
+(Then uncomment (‘#’) out statements in saves/world/data/exxabite/test.mcfunction).
+
+(Block gets active then….) 
+
+Block is inside level.dat.
+
+Runs only on 1.12.2 till now. 
+(need info on directory for functions and usage of fill/setblock command.
+
+Place block -> floodfill (left/right, north/south, down). Replacing only air to water.
+
+Command in repeating/self powered command block:
+
+ “/function exxabite:test” (without the quotes)
+
+File in: saves/world/data/exxabite/test.mcfunction
+
+fill ~-1 ~ ~ ~-1 ~ ~ repeating_command_block 0 keep {Command:"/function exxabite:test",auto:1b}
+fill ~1 ~ ~ ~1 ~ ~ repeating_command_block 0 keep {Command:"/function exxabite:test",auto:1b} 
+fill ~ ~ ~-1 ~ ~ ~-1 repeating_command_block 0 keep {Command:"/function exxabite:test",auto:1b} 
+fill ~ ~ ~1 ~ ~ ~1 repeating_command_block 0 keep {Command:"/function exxabite:test",auto:1b}
+fill ~ ~-1 ~ ~ ~-1 ~ repeating_command_block 0 keep {Command:"/function exxabite:test",auto:1b}
+setblock ~ ~ ~ water
+
+
+
