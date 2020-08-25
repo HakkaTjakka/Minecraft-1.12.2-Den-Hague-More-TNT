@@ -5,7 +5,9 @@ Latest news: Directory with region files truncated to 1000 files :( , so downloa
 More TNT
 
 (Short) sample(s):
+
 https://www.facebook.com/gerard.wensink/videos/3408524012543515/
+
 https://www.youtube.com/watch?v=h_L3k7FgbAc
 
 Changed code for more TNT (two east west and two north south tunnels).
@@ -57,10 +59,15 @@ Command in repeating/self powered command block:
 File in: saves/world/data/exxabite/test.mcfunction
 
 fill ~-1 ~ ~ ~-1 ~ ~ repeating_command_block 0 keep {Command:"/function exxabite:test",auto:1b}
+
 fill ~1 ~ ~ ~1 ~ ~ repeating_command_block 0 keep {Command:"/function exxabite:test",auto:1b} 
+
 fill ~ ~ ~-1 ~ ~ ~-1 repeating_command_block 0 keep {Command:"/function exxabite:test",auto:1b} 
+
 fill ~ ~ ~1 ~ ~ ~1 repeating_command_block 0 keep {Command:"/function exxabite:test",auto:1b}
+
 fill ~ ~-1 ~ ~ ~-1 ~ repeating_command_block 0 keep {Command:"/function exxabite:test",auto:1b}
+
 setblock ~ ~ ~ water
 
 https://youtu.be/6qW7vLGR_4w
