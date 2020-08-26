@@ -8,10 +8,15 @@ Use self powered command block (how to details see below) with /function exxabit
 fill.mcfunction: saves\More-TNT\datapacks\floodfill\data\exxabite\functions\fill.mcfunction contents:
 
 fill ~ ~-1 ~ ~ ~-1 ~ minecraft:repeating_command_block{Command:"function exxabite:fill",auto:1b} keep
+
 fill ~ ~ ~1 ~ ~ ~1 minecraft:repeating_command_block{Command:"function exxabite:fill",auto:1b} keep
+
 fill ~ ~ ~-1 ~ ~ ~-1 minecraft:repeating_command_block{Command:"function exxabite:fill",auto:1b} keep
+
 fill ~1 ~ ~ ~1 ~ ~ minecraft:repeating_command_block{Command:"function exxabite:fill",auto:1b} keep
+
 fill ~-1 ~ ~ ~-1 ~ ~ minecraft:repeating_command_block{Command:"function exxabite:fill",auto:1b} keep
+
 setblock ~ ~ ~ minecraft:water
 
 file: saves\More-TNT\datapacks\floodfill\pack.mcmeta contents:
