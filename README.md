@@ -1,6 +1,8 @@
 Latest:
 
-Zipping region files to 99999999 bytes, then uploading in batches of 10. (Busy)
+6699 Region files.
+
+Zipping region files to 99999999 bytes, then uploading in batches of 10.
 
 Added floodfill_more.zip for in world/datapacks dir with different recursive command blocks for fill.
 
